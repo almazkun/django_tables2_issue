@@ -1,0 +1,2 @@
+# django_template2_issue
+django_template2_issue
