@@ -1,8 +1,9 @@
-from django.http import HttpResponseRedirect
-from django.views.generic.edit import DeleteView
+from django.views.generic import DeleteView
 from django_tables2 import SingleTableView
 from .models import Conversation
 from .tables import ConversationTable
+from django.urls import reverse_lazy
+from django.shortcuts import redirect
 
 
 # Create your views here.
@@ -14,9 +15,8 @@ class ConversationList(SingleTableView):
 
 class ConversationDelete(DeleteView):
     model = Conversation
-    success_url = "/"
 
     def post(self, request, *args, **kwargs):
         self.object = self.get_object()
         self.object.delete()
-        return HttpResponseRedirect(self.success_url)
+        return redirect(reverse_lazy("home"))

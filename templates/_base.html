@@ -1,12 +1,11 @@
-{% load i18n %}
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
     <head></head>
-    <body class="d-flex flex-column h-100">
+    <body>
         {% block navigation %}
             {% include "includes/nav.html" %}
         {% endblock navigation %}
-        <main class="flex-shrink-0">
+        <main>
             {% block main_content %}{% endblock %}
         </main>
         {% block footer %}

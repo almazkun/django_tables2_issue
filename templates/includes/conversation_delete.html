@@ -1,4 +1,5 @@
+{% load i18n %}
 <form action="{% url "conversation_delete" record.pk %}" method="post">
     {% csrf_token %}
-    <input type="submit" value="Delete">
+    <input type="submit" value="{% trans "Del" %}" />
 </form>

@@ -1,2 +1,7 @@
-
-<nav>Nav</nav>
+<nav>
+    Nav
+    {{ csrf_token }}
+    <form>
+        {% csrf_token %}
+    </form>
+</nav>

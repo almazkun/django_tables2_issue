@@ -1,5 +1,6 @@
 {% extends "_base.html" %}
+{% load django_tables2 %}
 {% block main_content %}
     <h1>Table</h1>
-    <div class="border" style="overflow: auto;">{% include "includes/table.html" %}</div>
+    <div class="border" style="overflow: auto;">{% render_table table "includes/table.html" %}</div>
 {% endblock %}

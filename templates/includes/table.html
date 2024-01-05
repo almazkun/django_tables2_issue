@@ -1,6 +1,8 @@
 {% extends "django_tables2/bootstrap5.html" %}
-{% load i18n django_tables2 %}
+{% load i18n %}
+{% load django_tables2 %}
 {% block pagination %}
+    {{ csrf_token }}
     {% if table.page and table.paginator.num_pages > 1 %}
         <div aria-label="Table navigation">
             <ul class="pagination justify-content-center">

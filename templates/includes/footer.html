@@ -1,1 +1,7 @@
-<nav>Footer</nav>
+<nav>
+    Footer
+    {{ csrf_token }}
+    <form>
+        {% csrf_token %}
+    </form>
+</nav>

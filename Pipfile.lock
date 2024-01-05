@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "27ecc39913d665eddb3f78db95357ffa270af533b85d0f8a73b7ebaf74daf79a"
+            "sha256": "b3c6e3749104fa8509d43699fc30697a07ce1b4602eeeb38d30b3ab55a4b4f7a"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.11"
+            "python_version": "3.12"
         },
         "sources": [
             {
@@ -35,11 +35,11 @@
         },
         "django-tables2": {
             "hashes": [
-                "sha256:04f23c1181d93716c67085a3c324b449180fd0c5162ef4619acb0b2d9a166133",
-                "sha256:479eed04007cc04bcf764a6fb7a5e3955d94b878ba7f3a4bd4edbd2f7769e08d"
+                "sha256:4113fcc575eb438a12e83a4d4ea01452e4800d970e8bdd0e4122ac171af1900d",
+                "sha256:99e06d966ca8ac69fd74092eb45c79a280dd5ca0ccb81395d96261f62128e1af"
             ],
             "index": "pypi",
-            "version": "==2.6.0"
+            "version": "==2.7.0"
         },
         "sqlparse": {
             "hashes": [
